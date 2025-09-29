@@ -1,3 +1,19 @@
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  const content = document.getElementById('content');
+
+  // Delay before transition
+  setTimeout(() => {
+    loader.style.opacity = '0';
+    loader.style.transform = 'scale(0.9)';
+    content.style.opacity = '1';
+    content.style.filter = 'blur(0px)';
+
+    // Remove loader from DOM after transition
+    setTimeout(() => loader.style.display = 'none', 1000);
+  }, 2500); // ⏳ Delay for 2.5 seconds
+});
+
 // Mobile Menu Functionality
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const mobileNav = document.getElementById('mobileNav');
@@ -377,5 +393,6 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
 
 console.log('🍎 iPhone 15 Pro website initialized successfully!');
