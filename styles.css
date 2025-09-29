@@ -32,6 +32,114 @@ body {
     background: var(--bg-primary);
     overflow-x: hidden;
 }
+/* Colors Section Styling */
+.colors {
+  position: relative;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.color-card {
+  position: relative;
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.color-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, rgba(0,0,0,0.05), rgba(0,0,0,0));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.color-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.color-card:hover::before {
+  opacity: 1;
+}
+
+.color-swatch {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  position: relative;
+  transition: transform 0.35s ease;
+}
+
+.color-card:hover .color-swatch {
+  transform: scale(1.15) rotate(8deg);
+}
+
+.color-info h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.color-info p {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #777;
+}
+
+.color-info span {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.selection-indicator {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #0071e3;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.color-card.active .selection-indicator {
+  transform: scale(1);
+}
+
+.floating-accent {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  background: radial-gradient(circle at top left, rgba(0,113,227,0.15), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.color-card:hover .floating-accent {
+  opacity: 1;
+}
+
 
 .container {
     max-width: 1200px;
