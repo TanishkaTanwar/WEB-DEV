@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 15 Pro - Apple</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47c-1.34.03-1.77-.79-3.29-.79c-1.53 0-2.01.77-3.27.82c-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51c1.28-.02 2.5.87 3.29.87c.78 0 2.26-1.07 3.81-.91c.65.03 2.47.26 3.64 1.98c-.09.06-2.17 1.28-2.15 3.81c.03 3.02 2.65 4.03 2.68 4.04c-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5c.13 1.17-.34 2.35-1.04 3.19c-.69.85-1.83 1.51-2.95 1.42c-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">Apple</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#specs" class="nav-link">Tech Specs</a>
+                    <a href="#colors" class="nav-link">Colors</a>
+                </nav>
+                
+                <!-- CTA Button & Mobile Menu -->
+                <div class="nav-actions">
+                    <button class="btn-primary desktop-only">Buy Now</button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="4" x2="20" y1="12" y2="12"/>
+                            <line x1="4" x2="20" y1="6" y2="6"/>
+                            <line x1="4" x2="20" y1="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <div class="mobile-nav-content">
+                    <a href="#features" class="mobile-nav-link">Features</a>
+                    <a href="#specs" class="mobile-nav-link">Tech Specs</a>
+                    <a href="#colors" class="mobile-nav-link">Colors</a>
+                    <button class="btn-primary mobile-nav-btn">Buy Now</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-grid">
+                <!-- Hero Text -->
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">iPhone 15 Pro</span>
+                        <span class="title-gradient">Titanium. So strong. So light. So Pro.</span>
+                    </h1>
+                    <p class="hero-description">
+                        Forged in titanium and featuring the groundbreaking A17 Pro chip, 
+                        a customizable Action Button, and the most powerful iPhone camera system ever.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary btn-large">
+                            <span>Pre-order</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </button>
+                        <button class="btn-secondary btn-large">Learn more</button>
+                    </div>
+                </div>
+                
+                <!-- Hero iPhone -->
+                <div class="hero-phone">
+                    <div class="phone-container">
+                        <div class="phone-glow"></div>
+                        <img src="https://images.unsplash.com/photo-1744487347466-9d2087a0fbc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpUGhvbmUlMjAxNSUyMFBybyUyMHRpdGFuaXVtJTIwb2ZmaWNpYWx8ZW58MXx8fHwxNzU5MTI2NDI2fDA&ixlib=rb-4.1.0&q=80&w=1080" 
+                             alt="iPhone 15 Pro Titanium" 
+                             class="phone-image">
+                        <div class="phone-shadow"></div>
+                        <div class="ambient-glow"></div>
+                        <div class="floating-elements">
+                            <div class="floating-dot"></div>
+                            <div class="floating-dot"></div>
+                            <div class="floating-dot"></div>
+                            <div class="floating-dot"></div>
+                            <div class="floating-dot"></div>
+                            <div class="floating-dot"></div>
+                            <div class="floating-dot"></div>
+                            <div class="floating-dot"></div>
+                        </div>
+                    </div>
+                    <div class="glow-ring"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Revolutionary features</h2>
+                <p class="section-subtitle">Experience the future of smartphone technology</p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1: Camera -->
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1709306413255-2fff2dc4277a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpUGhvbmUlMjAxNSUyMGNhbWVyYSUyMHN5c3RlbSUyMGNsb3NlJTIwdXB8ZW58MXx8fHwxNzU5MTI2NDI2fDA&ixlib=rb-4.1.0&q=80&w=1080" 
+                             alt="iPhone 15 Camera System">
+                        <div class="feature-gradient orange-pink"></div>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                                <circle cx="12" cy="13" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Pro Camera System</h3>
+                        <p class="feature-subtitle">Capture the extraordinary</p>
+                        <p class="feature-description">
+                            Revolutionary 48MP Main camera with 2x Telephoto and advanced computational photography. 
+                            Every shot becomes a masterpiece with unprecedented detail and clarity.
+                        </p>
+                        <div class="feature-stats">
+                            <span class="stat">48MP</span>
+                            <span class="stat">2x Zoom</span>
+                            <span class="stat">4K Video</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Dynamic Island -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1691757641682-dc384f95337e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpUGhvbmUlMjAxNSUyMGRpc3BsYXklMjBzY3JlZW4lMjBEeW5hbWljJTIwSXNsYW5kfGVufDF8fHx8MTc1OTEyNjQyN3ww&ixlib=rb-4.1.0&q=80&w=1080" 
+                             alt="iPhone 15 Dynamic Island">
+                        <div class="feature-gradient blue-purple"></div>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                                <path d="M12 18h.01"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Dynamic Island</h3>
+                        <p class="feature-subtitle">Magic in motion</p>
+                        <p class="feature-description">
+                            A revolutionary interface that adapts to you. Dynamic Island seamlessly blends hardware and software, 
+                            creating an intuitive new way to interact with your iPhone.
+                        </p>
+                        <div class="feature-stats">
+                            <span class="stat">Adaptive</span>
+                            <span class="stat">Live Activities</span>
+                            <span class="stat">Smart Alerts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: A17 Pro Chip -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1716436329478-9c954c6bd611?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpUGhvbmUlMjAxNSUyMEExNyUyMFBybyUyMGNoaXAlMjBwZXJmb3JtYW5jZXxlbnwxfHx8fDE3NTkxMjY0Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080" 
+                             alt="iPhone 15 A17 Pro Chip">
+                        <div class="feature-gradient green-blue"></div>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="16" height="16" x="4" y="4" rx="2"/>
+                                <rect width="6" height="6" x="9" y="9" rx="1"/>
+                                <path d="m15 2-3 3.5L9 2"/>
+                                <path d="M18 6 21 9l-3 3"/>
+                                <path d="m9 22 3-3.5L15 22"/>
+                                <path d="M6 18 3 15l3-3"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">A17 Pro Chip</h3>
+                        <p class="feature-subtitle">Pure performance</p>
+                        <p class="feature-description">
+                            The most advanced chip in any smartphone delivers desktop-class performance with industry-leading efficiency. 
+                            Experience the future of mobile computing.
+                        </p>
+                        <div class="feature-stats">
+                            <span class="stat">3nm Process</span>
+                            <span class="stat">6-Core GPU</span>
+                            <span class="stat">16-Core Neural</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Variants Section -->
+    <section class="colors" id="colors">
+        <div class="colors-bg"></div>
+        <div class="container">
+            <!-- Main Phone Display -->
+            <div class="phone-display">
+                <div class="phone-display-container">
+                    <div class="phone-glass"></div>
+                    <div class="realistic-phone" id="realisticPhone">
+                        <img id="phoneImage" 
+                             src="https://images.unsplash.com/photo-1695822958645-b2b058159215?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpUGhvbmUlMjAxNSUyMFBybyUyME1heCUyMG5hdHVyYWwlMjB0aXRhbml1bXxlbnwxfHx8fDE3NTkxMjY0MzB8MA&ixlib=rb-4.1.0&q=80&w=1080" 
+                             alt="iPhone 15 Pro Natural Titanium" 
+                             class="phone-image-realistic">
+                        <div class="phone-shadow-realistic"></div>
+                        <div class="ambient-glow-realistic" id="ambientGlow"></div>
+                        <div class="reflection-effect"></div>
+                        <div class="floating-particles-phone">
+                            <div class="floating-particle"></div>
+                            <div class="floating-particle"></div>
+                            <div class="floating-particle"></div>
+                            <div class="floating-particle"></div>
+                            <div class="floating-particle"></div>
+                            <div class="floating-particle"></div>
+                        </div>
+                    </div>
+                    <div class="color-ambient-light" id="colorAmbientLight"></div>
+                </div>
+                
+                <div class="phone-title">
+                    <h3 id="selectedColorName">Natural Titanium</h3>
+                    <p>Premium titanium finish</p>
+                </div>
+            </div>
+
+            <!-- Color Selection -->
+            <div class="color-selection">
+                <div class="color-header">
+                    <h3>Choose your finish</h3>
+                    <p>Select the perfect titanium color for your style</p>
+                </div>
+                
+                <div class="color-grid">
+                    <button class="color-card active" data-color="natural" data-aos="fade-up">
+                        <div class="color-bg"></div>
+                        <div class="color-swatch natural-swatch">
+                            <div class="swatch-ring"></div>
+                        </div>
+                        <div class="color-info">
+                            <h4>Natural</h4>
+                            <p>TITANIUM</p>
+                            <span>#8B8B8B</span>
+                        </div>
+                        <div class="selection-indicator"></div>
+                        <div class="floating-accent"></div>
+                    </button>
+
+                    <button class="color-card" data-color="blue" data-aos="fade-up" data-aos-delay="100">
+                        <div class="color-bg"></div>
+                        <div class="color-swatch blue-swatch">
+                            <div class="swatch-ring"></div>
+                        </div>
+                        <div class="color-info">
+                            <h4>Blue</h4>
+                            <p>TITANIUM</p>
+                            <span>#4A90E2</span>
+                        </div>
+                        <div class="selection-indicator"></div>
+                        <div class="floating-accent"></div>
+                    </button>
+
+                    <button class="color-card" data-color="white" data-aos="fade-up" data-aos-delay="200">
+                        <div class="color-bg"></div>
+                        <div class="color-swatch white-swatch">
+                            <div class="swatch-ring"></div>
+                        </div>
+                        <div class="color-info">
+                            <h4>White</h4>
+                            <p>TITANIUM</p>
+                            <span>#F5F5F5</span>
+                        </div>
+                        <div class="selection-indicator"></div>
+                        <div class="floating-accent"></div>
+                    </button>
+
+                    <button class="color-card" data-color="black" data-aos="fade-up" data-aos-delay="300">
+                        <div class="color-bg"></div>
+                        <div class="color-swatch black-swatch">
+                            <div class="swatch-ring"></div>
+                        </div>
+                        <div class="color-info">
+                            <h4>Black</h4>
+                            <p>TITANIUM</p>
+                            <span>#1A1A1A</span>
+                        </div>
+                        <div class="selection-indicator"></div>
+                        <div class="floating-accent"></div>
+                    </button>
+                </div>
+
+                <div class="color-footer">
+                    <div class="availability-info">
+                        <div class="availability-dot"></div>
+                        <span>Available in all storage capacities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Specs Section -->
+    <section class="tech-specs" id="specs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Specifications</h2>
+                <p class="section-subtitle">Cutting-edge technology in every detail</p>
+            </div>
+            
+            <div class="specs-grid">
+                <div class="spec-card" data-aos="fade-up">
+                    <h4>Display</h4>
+                    <p>6.1-inch Super Retina XDR display with ProMotion technology</p>
+                </div>
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Chip</h4>
+                    <p>A17 Pro chip with 6-core GPU</p>
+                </div>
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Storage</h4>
+                    <p>128GB, 256GB, 512GB, 1TB</p>
+                </div>
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Camera</h4>
+                    <p>48MP Main, 12MP Ultra Wide, 12MP Telephoto</p>
+                </div>
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="400">
+                    <h4>Battery</h4>
+                    <p>Up to 23 hours video playback</p>
+                </div>
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="500">
+                    <h4>Water Resistance</h4>
+                    <p>IP68 rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47c-1.34.03-1.77-.79-3.29-.79c-1.53 0-2.01.77-3.27.82c-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51c1.28-.02 2.5.87 3.29.87c.78 0 2.26-1.07 3.81-.91c.65.03 2.47.26 3.64 1.98c-.09.06-2.17 1.28-2.15 3.81c.03 3.02 2.65 4.03 2.68 4.04c-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5c.13 1.17-.34 2.35-1.04 3.19c-.69.85-1.83 1.51-2.95 1.42c-.15-1.15.41-2.35 1.05-3.11z"/>
+                            </svg>
+                        </div>
+                        <span class="logo-text">Apple</span>
+                    </div>
+                    <p>Forged in titanium. Built for the future.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h5>Product</h5>
+                        <a href="#">iPhone 15 Pro</a>
+                        <a href="#">iPhone 15</a>
+                        <a href="#">Accessories</a>
+                    </div>
+                    <div class="footer-column">
+                        <h5>Support</h5>
+                        <a href="#">Tech Support</a>
+                        <a href="#">Warranty</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h5>Company</h5>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Privacy</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
